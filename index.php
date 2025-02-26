@@ -97,13 +97,13 @@ if (isset($_POST['vender'])) {
                         <td>
                             <!-- Formulario de compra -->
                             <form action="" method="POST" class="d-inline">
-                                <input type="number" name="cantidad" placeholder="Cantidad" min="0" required>
+                                <input type="number" name="cantidad" placeholder="Cantidad" min="0" step="0.0000001" required>
                                 <input type="hidden" name="cripto" value="<?php echo $cripto; ?>">
                                 <button type="submit" name="comprar" class="btn btn-success">Comprar</button>
                             </form>
                             <!-- Formulario de venta -->
                             <form action="" method="POST" class="d-inline">
-                                <input type="number" name="cantidad" placeholder="Cantidad" min="0" required>
+                                <input type="number" name="cantidad" placeholder="Cantidad" min="0" step="0.0000001" required>
                                 <input type="hidden" name="cripto" value="<?php echo $cripto; ?>">
                                 <button type="submit" name="vender" class="btn btn-danger">Vender</button>
                             </form>
